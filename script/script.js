@@ -7,7 +7,11 @@ function go_top(){
 }
 
 function search(){
-    url="https://www.google.com/search?q=";
-    url += document.getElementById("search_bar").value;
-    window.open(url);
+    typed = document.getElementById("search_bar").value;
+    if(length(typed) > 0){
+        url="https://www.google.com/search?q=";
+        url += typed;
+        window.open(url);
+    }
+    console.log("not yet typed");
 }
