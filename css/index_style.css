@@ -30,6 +30,30 @@ body {
   color: white;
 }
 
+.block_list {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
+  margin: 30px;
+  background-color: #555;
+  width: 200px;
+  height: 150px;
+  text-align: center ;
+  font-size: 30px;
+}
+
+.block_element { 
+  text-decoration: none; 
+  color: #b8b8b8;
+}
+
+#block_div::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #go_top {
   background-color: #3d5c5c;
   border: 0px;
