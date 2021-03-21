@@ -37,39 +37,48 @@
   <p>웹프로그래밍을 배워보자!</p>
   <hr>
 
-  <div style="margin: 20px; padding: 20px; background-color: #555; width: 300px;">
-    <h1>애국가</h1>
-    <h2>1절</h2>
-    <pre>
-      동해물과 백두산이 마르고 닳도록
-      하느님이 보우하사 우리나라 만세
-      무궁화 삼천리 화려 강산
-      대한사람 대한으로 길이 보전하세
-    </pre>
+  <style>
+    .block_list {
+      float: left;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10%;
+      margin: 30px;
+      background-color: #555;
+      width: 200px;
+      height: 150px;
+      text-align: center ;
+      font-size: 30px;
+    }
 
-    <h2>2절</h2>
-    <pre>
-      남산 위에 저 소나무 철갑을 두른듯
-      바람서리 불변함은 우리 기상일세
-      무궁화 삼천리 화려 강산
-      대한사람 대한으로 길이 보전하세
-    </pre>
+    .block_element { 
+      text-decoration: none; 
+      color: #b8b8b8;
+    }
 
-    <h2>3절</h2>
-    <pre>
-      가을 하늘 공활한데 높고 구름 없이
-      밝은 달은 우리 가슴 일편단심일세
-      무궁화 삼천리 화려 강산
-      대한사람 대한으로 길이 보전하세
-    </pre>
+    #block_div::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+  </style>
+  <div id="block_div">
+    <div class="block_list">
+      <a class="block_element" href="#">Manchester United</a>
+    </div>
+  
+    <div class="block_list">
+      <a class="block_element" href="#">Liverpool</a>
+    </div>
 
-    <h2>4절</h2>
-    <pre>
-      이 기상과 이 마음으로 충성을 다하여
-      괴로우나 즐거우나 나라사랑하세
-      무궁화 삼천리 화려 강산
-      대한사람 대한으로 길이 보전하세
-    </pre>
+    <div class="block_list">
+      <a class="block_element" href="#">Chelsea</a>
+    </div>
+
+    <div class="block_list">
+      <a class="block_element" href="#">Arsenal</a>
+    </div>
   </div>
 
   <br><hr>
@@ -83,14 +92,13 @@
   <a class="edit" href="https://github.com/20170375/20170375.github.io/edit/main/index.html" target="_blank">edit <i>index.html</i></a><br>
   <a class="edit" href="https://github.com/20170375/20170375.github.io/edit/main/css/index_style.css" target="_blank">edit <i>index_style.css</i></a><br>
   <a class="edit" href="https://github.com/20170375/20170375.github.io/edit/main/script/script.js" target="_blank">edit <i>script.js</i></a><br>
-  <br><hr>
+  <hr><br>
 
   <form autocomplete="off">
     <input id="search_bar" type="text">
     <input type="submit" onclick="search()" value="search">
     <button id="go_top" onclick="go_top()">Top</button>
   </form>
-
   
 </body>
   
