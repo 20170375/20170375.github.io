@@ -8,7 +8,7 @@ function go_top(){
 
 function search(){
     typed = document.getElementById("search_bar").value;
-    if(length(typed) > 0){
+    if(typed.length > 0){
         url="https://www.google.com/search?q=";
         url += typed;
         window.open(url);
