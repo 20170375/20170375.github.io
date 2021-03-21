@@ -1,5 +1,5 @@
 function go_home(){
-    document.location.href="../html/home.html";
+    document.location.href="../index.html";
 }
 
 function go_top(){
