@@ -17,10 +17,11 @@ body {
 }
 
 #go_top {
-  background-color: cornflowerblue;
+  background-color: #3d5c5c;
   border: 0px;
   float: right;
   margin: 10px;
   font-size: 20px;
   font-style: italic;
+  color: white;
 }
