@@ -12,14 +12,16 @@ body {
 
 #menu_list {
   background-color: #555;
+  opacity: 0.7;
   padding: 2px;
   margin-top: 15px;
  }
+
  .nav_list {
    margin: 15px;
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
+   color: white;
+   font-size: 20px;
+   text-decoration: none;
  }
 
 #headline_title {
