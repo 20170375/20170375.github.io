@@ -10,9 +10,21 @@ body {
   text-align: center;
 }
 
+#menu_list {
+  background-color: #555;
+  padding: 2px;
+  margin-top: 15px;
+ }
+ .nav_list {
+   margin: 15px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+ }
+
 #headline_title {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
 }
 
@@ -22,6 +34,5 @@ body {
   float: right;
   margin: 10px;
   font-size: 20px;
-  font-style: italic;
   color: white;
 }
