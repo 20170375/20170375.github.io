@@ -2,12 +2,19 @@ body {
   background-color: #22272e;
   margin: auto;
 }
-
 header {
   background-color: black;
   margin: auto;
   padding: 100px;
   text-align: center;
+}
+nav {
+  background-color: #555;
+  max-width: 1200px;
+  margin: auto;
+  opacity: 0.9;
+  padding: 2px;
+  margin-top: 15px;
 }
 main {
   max-width: 1200px;
@@ -15,12 +22,10 @@ main {
   padding-left: 10px;
   color: #b8b8b8;
 }
-
 footer {
   margin: auto;
   padding-left: 10px;
 }
-
 #github_link {
   float: right;
   color: white;
@@ -29,27 +34,17 @@ footer {
   font-size: 16px;
   text-decoration: none;
 }
-
 #headline {
   font-size: 50px;
   color: white;
   text-decoration: none;
 }
-
-#menu {
-  background-color: #555;
-  opacity: 0.9;
-  padding: 2px;
-  margin-top: 15px;
- }
-
- .menu_element {
+.menu_element {
    margin: 15px;
    color: white;
    font-size: 20px;
    text-decoration: none;
- }
-
+}
 .blocks {
   float: left;
   padding-left: 20px;
@@ -62,23 +57,19 @@ footer {
   text-align: center ;
   font-size: 30px;
 }
-
 .block_focus {
   background-color: #888;
   color: black;
 }
-
 .block_element { 
   text-decoration: none; 
   color: #b8b8b8;
 }
-
 #block_div::after {
   content: "";
   display: table;
   clear: both;
 }
-
 #go_top {
   background-color: #3d5c5c;
   border: 0px;
