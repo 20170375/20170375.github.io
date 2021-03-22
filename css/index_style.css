@@ -3,6 +3,15 @@ body {
   color: #b8b8b8;
 }
 
+#github_link {
+  float: right;
+  color: white;
+  padding: 20px;
+  padding-right: 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 #headline {
   background-color: black;
   margin: -10px;
