@@ -25,7 +25,7 @@ body {
   text-decoration: none;
 }
 
-#menu_list {
+#menu {
   background-color: #555;
   opacity: 0.7;
   padding: 2px;
@@ -39,7 +39,7 @@ body {
    text-decoration: none;
  }
 
-.block_list {
+.blocks {
   float: left;
   padding-left: 20px;
   padding-right: 20px;
@@ -50,6 +50,11 @@ body {
   height: 150px;
   text-align: center ;
   font-size: 30px;
+}
+
+.block_focus {
+  background-color: #888;
+  color: black;
 }
 
 .block_element { 
