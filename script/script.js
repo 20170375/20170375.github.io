@@ -1,7 +1,3 @@
-function go_home(){
-    document.location.href="../";
-}
-
 function go_top(){
     document.location="#headline";
 }

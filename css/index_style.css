@@ -15,8 +15,14 @@ body {
 #headline {
   background-color: black;
   margin: -10px;
-  padding: 50px;
+  padding: 100px;
   text-align: center;
+}
+
+#headline_title {
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
 }
 
 #menu_list {
@@ -32,12 +38,6 @@ body {
    font-size: 20px;
    text-decoration: none;
  }
-
-#headline_title {
-  text-decoration: none;
-  font-size: 50px;
-  color: white;
-}
 
 .block_list {
   float: left;
