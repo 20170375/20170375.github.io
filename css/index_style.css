@@ -1,6 +1,24 @@
 body {
   background-color: #22272e;
+  min-width: 700px;
+  margin: auto;
   color: #b8b8b8;
+}
+
+header {
+  background-color: black;
+  margin: auto;
+  padding: 100px;
+  text-align: center;
+}
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 10px;
+}
+
+footer {
+  margin: auto;
 }
 
 #github_link {
@@ -13,13 +31,6 @@ body {
 }
 
 #headline {
-  background-color: black;
-  margin: -10px;
-  padding: 100px;
-  text-align: center;
-}
-
-#headline_title {
   font-size: 50px;
   color: white;
   text-decoration: none;
