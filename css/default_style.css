@@ -50,10 +50,12 @@ footer {
   font-weight: 1000;
 }
 #go_top {
-  background-color: #3d5c5c;
+  background-color: #30343c;
   border: 0px;
   float: right;
   margin: 10px;
+  padding: 8px;
+  border-radius: 10px;
   font-size: 20px;
   color: white;
 }
