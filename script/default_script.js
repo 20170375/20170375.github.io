@@ -12,7 +12,7 @@ function go_top(){
 
 var a_list = document.getElementsByTagName("a");
 for(var i=0; i<a_list.length; i++){
-    if(a_list[i].classList.contains("menu_element") == false){
+    if(a_list[i].classList.contains("menu_element") == false && a_list[i].id != "headline"){
         a_list[i].setAttribute("target", "_blank");
     }
 }
