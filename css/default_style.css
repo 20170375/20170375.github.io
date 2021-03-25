@@ -9,7 +9,8 @@ header {
   text-align: center;
 }
 nav {
-  background-color: #555;
+  /* background-color: #555; */
+  background-color: #30343c;
   max-width: 1200px;
   margin: auto;
   margin-top: 15px;
