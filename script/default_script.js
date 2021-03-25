@@ -23,4 +23,5 @@ for(var i=0; i<menu_list.length; i++){
   menu_list[i].setAttribute("onmouseout", "menu_focus(this)");
 }
 
+document.getElementById("search_bar").setAttribute("size", "40px");
 document.getElementById("go_top").setAttribute("onclick", "go_top()");
