@@ -9,13 +9,13 @@ header {
   text-align: center;
 }
 nav {
-  /* background-color: #555; */
   background-color: #30343c;
   max-width: 1200px;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 12px;
   padding: 2px;
   opacity: 0.9;
+  border-radius: 10px;
 }
 main {
   max-width: 1200px;
