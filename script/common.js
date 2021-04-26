@@ -6,7 +6,7 @@ head.innerHTML = head_html + head.innerHTML;
 
 // ---- body tag setting ----
 var body = document.querySelector("body");
-var body_html = "<a id=\"github_link\" href=\"https://github.com/20170375\">GitHub<small> info</small></a>";
+var body_html = "<a id=\"github_link\" href=\"https://github.com/20170375/html/index.html\">GitHub<small> info</small></a>";
 body_html += "<header></header>";
 body_html += "<nav><ul class=\"menu_list\"></ul></nav>";
 body.innerHTML = body_html + body.innerHTML;
