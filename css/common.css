@@ -25,6 +25,7 @@ main {
 }
 footer {
   margin: auto;
+  padding-bottom: 10px;
   padding-left: 10px;
 }
 hr {
@@ -59,12 +60,12 @@ hr {
   position: fixed;
   bottom: 1.5%;
   right: 1%;
-  top: 94%;
+  top: 95.5%;
   background-color: #30343c;
   border: 0px;
   float: right;
-  padding: 8px;
-  border-radius: 10px;
+  border-radius: 7px;
+  height: 30px;
   font-size: 20px;
   color: #b8b8b8;
 }
