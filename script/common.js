@@ -6,7 +6,7 @@ head.innerHTML = head_html + head.innerHTML;
 
 // ---- body tag setting ----
 var body = document.querySelector("body");
-var body_html = "<a id=\"github_link\" href=\"https://github.com/20170375/html/index.html\">GitHub<small> info</small></a>";
+var body_html = "<a id=\"github_link\" href=\"https://github.com/20170375\">GitHub<small> info</small></a>";
 body_html += "<header></header>";
 body_html += "<nav><ul class=\"menu_list\"></ul></nav>";
 body.innerHTML = body_html + body.innerHTML;
@@ -14,7 +14,7 @@ body.innerHTML = body_html + body.innerHTML;
 
 // ---- header tag setting ----
 var header = document.querySelector("header");
-var header_html = "<a id=\"headline\" href=\"https://20170375.github.io/\"><strong>GitHub</strong> Page</a>";
+var header_html = "<a id=\"headline\" href=\"https://20170375.github.io/html/index.html\"><strong>GitHub</strong> Page</a>";
 header.innerHTML = header_html;
 
 
