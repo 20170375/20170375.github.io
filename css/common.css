@@ -2,38 +2,79 @@ body {
   background-color: #22272e;
   margin: auto;
 }
+
+
 header {
   background-color: black;
   margin: auto;
   padding: 100px;
   text-align: center;
 }
+header > a {
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+
 nav {
   background-color: #30343c;
   max-width: 1200px;
   margin: auto;
-  margin-top: 12px;
+  margin-top: 8px;
   padding: 2px;
   opacity: 0.9;
   border-radius: 10px;
+  text-align: center;
 }
+.tabmenu > div {
+  display: inline-block;
+  margin-right: 2.5%;
+  width: 100px;
+  line-height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.tabmenu > div > hr {
+  margin: 0;
+  height: 2.5px;
+  border-width: 0px;
+}
+.tabmenu > div > a {
+  color: #b8b8b8;
+  text-decoration: none;
+}
+.menu_focus > a {
+  color: #d9d9d9;
+}
+.menu_focus > hr {
+  background-color: #b8b8b8;
+}
+
+
 main {
   max-width: 1200px;
   margin: auto;
   padding-left: 10px;
   color: #b8b8b8;
 }
+
+
 footer {
   margin: auto;
   padding-bottom: 10px;
   padding-left: 10px;
 }
-hr {
+
+
+main > hr {
   height: 3px;
   border-width:0;
   background-color: #30343c;
   color: #30343c;
 }
+
+
 #github_link {
   float: right;
   color: white;
@@ -42,20 +83,8 @@ hr {
   font-size: 16px;
   text-decoration: none;
 }
-#headline {
-  font-size: 50px;
-  color: white;
-  text-decoration: none;
-}
-.menu_element {
-  margin: 2.5%;
-  color: #b8b8b8;
-  font-size: 20px;
-  text-decoration: none;
-}
-.menu_focus {
-  color: #d9d9d9;
-}
+
+
 #go_top {
   position: fixed;
   bottom: 1.5%;
