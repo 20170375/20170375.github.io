@@ -1,7 +1,7 @@
 [
-    {"href" : "https://www.manutd.com/", "name" : "Manchester<br>United"},
+    {"href" : "https://www.manutd.com/", "name" : "<small>Manchester</small><br>United"},
     {"href" : "https://www.liverpoolfc.com/", "name" : "Liverpool"},
     {"href" : "https://www.chelseafc.com/en", "name" : "Chelsea"},
     {"href" : "https://www.arsenal.com/", "name" : "Arsenal"},
-    {"href" : "https://www.mancity.com/", "name" : "Manchester<br>City"}
+    {"href" : "https://www.mancity.com/", "name" : "<small>Manchester</small><br>City"}
 ]
