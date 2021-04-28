@@ -8,6 +8,7 @@ head.innerHTML = head_html + head.innerHTML;
 var body = document.querySelector("body");
 var body_html = "";
 body_html += "<script id=\"template-menu\" type=\"text/template\"><div><a href={href}>{name}</a><hr></div></script>";
+body_html += "<script id=\"template-block\" type=\"text/template\"><div><a href={href}>{name}</a></div></script>";
 body_html += "<a id=\"github_link\" href=\"https://github.com/20170375\">GitHub<small> info</small></a>";
 body_html += "<header></header>";
 body_html += "<nav></nav>";
@@ -44,22 +45,24 @@ document.getElementById("go_top").setAttribute("onclick", "go_top()");
 
 // ---- tabmenu setting ----
 var tabmenu = document.querySelector(".tabmenu");
-jQuery.getJSON("../json/menu.json", function (data) {
-    var resultHtml = tabmenu.innerHTML;
+jQuery.getJSON("../json/tabmenu.json", function (data) {
+    var resultHtml = "";
     var menu_html = document.querySelector("#template-menu").innerHTML;
     for(var i=0, len=data.length; i<len; i++) {
       resultHtml += menu_html.replace("{name}", data[i].name)
                                         .replace("{href}", data[i].href);
     }
-    tabmenu.innerHTML = resultHtml;
+    tabmenu.innerHTML += resultHtml;
 
     var menu_list = tabmenu.querySelectorAll("div");
     for(var i=0; i<menu_list.length; i++){
         menu_list[i].setAttribute("target", "_blank");
         menu_list[i].setAttribute("onmouseover", "menu_focus(this)");
         menu_list[i].setAttribute("onmouseout", "menu_focus(this)");
+        menu_list[i].classList.toggle("menu_nomal");
     }
 });
 function menu_focus(menu) {
     menu.classList.toggle("menu_focus");
+    menu.classList.toggle("menu_nomal");
 }

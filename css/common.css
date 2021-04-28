@@ -35,20 +35,24 @@ nav {
   font-size: 20px;
   cursor: pointer;
 }
-.tabmenu > div > hr {
-  margin: 0;
-  height: 2.5px;
-  border-width: 0px;
-}
-.tabmenu > div > a {
+.menu_nomal > a {
   color: #b8b8b8;
   text-decoration: none;
 }
 .menu_focus > a {
   color: #d9d9d9;
+  text-decoration: none;
+}
+.menu_nomal > hr {
+  margin: 0;
+  height: 2.5px;
+  border-width: 0px;
 }
 .menu_focus > hr {
   background-color: #b8b8b8;
+  margin: 0;
+  height: 2.5px;
+  border-width: 0px;
 }
 
 
