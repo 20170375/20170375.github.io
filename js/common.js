@@ -4,9 +4,11 @@ var head_html = "<meta charset=\"utf-8\"><meta name=\"keywords\" content=\"githu
 head.innerHTML = head_html + head.innerHTML;
 
 
-// ---- body tag setting ----
+//  ---- body tag setting ----
 var body = document.querySelector("body");
-var body_html = "<a id=\"github_link\" href=\"https://github.com/20170375\">GitHub<small> info</small></a>";
+var body_html = "";
+body_html += "<script id=\"template-menu\" type=\"text/template\"><div><a href={href}>{name}</a><hr></div></script>";
+body_html += "<a id=\"github_link\" href=\"https://github.com/20170375\">GitHub<small> info</small></a>";
 body_html += "<header></header>";
 body_html += "<nav></nav>";
 body.innerHTML = body_html + body.innerHTML;
