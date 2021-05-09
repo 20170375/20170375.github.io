@@ -1,7 +1,7 @@
 # 20170375.github.io
 
 ## GOTO
-+ [https://20170375.github.io/html/index](https://20170375.github.io/html/index)
++ https://20170375.github.io/html/index
 
 ## Reference
 + [GitHub 블로그 만들기](https://dreamgonfly.github.io/blog/jekyll-remote-theme/)
