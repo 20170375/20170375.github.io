@@ -29,7 +29,7 @@ header.innerHTML = header_html;
 
 // ---- footer tag setting ----
 var footer = document.querySelector("footer");
-var footer_html = "<form autocomplete=\"off\"><input id=\"search_bar\" type=\"text\"><input type=\"submit\" onclick=\"search()\" value=\"search\"><button id=\"go_top\" onclick=\"go_top()\">Top</button></form>";
+var footer_html = "<form autocomplete=\"off\"><input id=\"search_bar\" type=\"text\"><input type=\"submit\" onclick=\"search()\" value=\"search\"><button id=\"top_btn\" onclick=\"go_top()\">Top</button></form>";
 footer.innerHTML = footer_html;
 function search() {
     url="https://www.google.com/search?q=";
@@ -38,9 +38,9 @@ function search() {
 }
 document.getElementById("search_bar").setAttribute("size", "40px");
 function go_top() {
-    document.location="#headline";
+    document.location="#github_link";
 }
-document.getElementById("go_top").setAttribute("onclick", "go_top()");
+document.getElementById("top_btn").setAttribute("onclick", "go_top()");
 
 
 // ---- tabmenu setting ----
