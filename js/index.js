@@ -15,7 +15,6 @@ jQuery.getJSON("../json/blockmenu.json", function (data) {
     blocks[i].setAttribute("onmouseout", "block_focus(this)");
     blocks[i].classList.toggle("block_nomal");
   }
-
 });
 function block_focus(block){
   block.classList.toggle("block_focus");
