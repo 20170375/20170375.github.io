@@ -1,36 +1,111 @@
 // ---- head tag setting ----
 var head = document.querySelector("head");
-var head_html = "<meta charset=\"utf-8\"><meta name=\"keywords\" content=\"github.io, github page, 20170375\"><meta name=\"description\" content=\"github.io page by 20170375\"><meta name=\"author\" content=\"20170375\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">";
-head.innerHTML = head_html + head.innerHTML;
+var meta = document.createElement('meta');
+head.append(meta);
+meta.setAttribute("charset", "utf-8");
+var meta = document.createElement('meta');
+head.append(meta);
+meta.name = "keywords";
+meta.content = "github.io, github page, 20170375";
+var meta = document.createElement('meta');
+head.append(meta);
+meta.name = "description";
+meta.content = "github.io page by 20170375";
+var meta = document.createElement('meta');
+head.append(meta);
+meta.name = "author";
+meta.content = "20170375";
+var meta = document.createElement('meta');
+head.append(meta);
+meta.name = "viewport";
+meta.content = "width=device-width, initial-scale=1.0";
 
 
 //  ---- body tag setting ----
 var body = document.querySelector("body");
-var body_html = "";
-body_html += "<script id=\"template-menu\" type=\"text/template\"><div><a href={href}>{name}</a><hr></div></script>";
-body_html += "<script id=\"template-block\" type=\"text/template\"><div><a href={href}>{name}</a></div></script>";
-body_html += "<a id=\"github_link\" href=\"https://github.com/20170375\">GitHub<small> info</small></a>";
-body_html += "<header></header>";
-body_html += "<nav></nav>";
-body.innerHTML = body_html + body.innerHTML;
+var script = document.createElement('script');
+body.append(script);
+script.id = "template-menu";
+script.type="text/template";
+var div = document.createElement('div');
+script.append(div);
+var a = document.createElement('a');
+div.append(a);
+a.href = "{href}";
+a.innerText = "{name}";
+var hr = document.createElement('hr');
+div.append(hr);
+
+var script = document.createElement('script');
+body.append(script);
+script.id = "template-block";
+script.type="text/template";
+var div = document.createElement('div');
+script.append(div);
+var a = document.createElement('a');
+div.append(a);
+a.href = "{href}";
+a.innerText = "{name}";
+
+var a = document.createElement('a');
+body.append(a);
+a.id = "github_link";
+a.href = "https://github.com/20170375";
+a.innerText = "Github";
+var small = document.createElement('small');
+small.innerText = " info";
+a.append(small);
+
+var header = document.createElement('header');
+body.append(header);
+
+var nav = document.createElement('nav');
+body.append(nav);
+
+var main = document.querySelector("main");
+body.append(main);
+
+var footer = document.createElement('footer');
+body.append(footer);
 
 
 // ---- nav tag setting ----
 var nav = document.querySelector("nav");
-var nav_html = "<div class=\"tabmenu\"></div>";
-nav.innerHTML = nav_html;
+var div = document.createElement('div');
+div.className = "tabmenu";
+nav.append(div);
 
 
 // ---- header tag setting ----
 var header = document.querySelector("header");
-var header_html = "<a href=\"https://20170375.github.io/html/index.html\"><strong>GitHub</strong> Page</a>";
-header.innerHTML = header_html;
+var a = document.createElement('a');
+a.href = "https://20170375.github.io/html/index.html";
+var strong = document.createElement('strong');
+strong.innerText = "Github";
+a.append(strong);
+a.innerHTML += " Page";
+header.append(a);
 
 
 // ---- footer tag setting ----
 var footer = document.querySelector("footer");
-var footer_html = "<form autocomplete=\"off\"><input id=\"search_bar\" type=\"text\"><input type=\"submit\" onclick=\"search()\" value=\"search\"><button id=\"top_btn\" onclick=\"go_top()\">Top</button></form>";
-footer.innerHTML = footer_html;
+var form = document.createElement('form');
+form.autocomplete = "off";
+footer.append(form);
+var input = document.createElement('input');
+input.id = "search_bar";
+input.type = "text";
+form.append(input);
+var input = document.createElement('input');
+input.type = "submit";
+input.onclick = "search()";
+input.value = "search";
+form.append(input);
+var button = document.createElement('button');
+button.id = "top_btn";
+button.onclick = "go_top()";
+button.innerText = "Top";
+form.append(button);
 function search() {
     url="https://www.google.com/search?q=";
     url += document.getElementById("search_bar").value;
