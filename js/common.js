@@ -97,34 +97,33 @@ form.append(input);
 input.id = "search_bar";
 input.type = "text";
 input.style.color = "#b8b8b8";
+input.setAttribute("size", "40px");
 input.style.backgroundColor = "#30343c";
 var input = document.createElement('input');
 form.append(input);
 input.type = "submit";
 input.style.color = "#ffffff";
-input.onclick = search;
-input.value = "search";
-input.style.backgroundColor = "#60646c";
-var button = document.createElement('button');
-form.append(button);
-button.id = "top_btn";
-button.onclick = "go_top()";
-button.style.backgroundColor = "Transparent";
-var img = document.createElement('img');
-button.append(img);
-img.src = "https://20170375.github.io/src/top.jpg";
-img.width = "30";
-img.height = "30";
-function search() {
+input.onclick = function () {
     url="https://www.google.com/search?q=";
     url += document.getElementById("search_bar").value;
     window.open(url);
-}
-document.getElementById("search_bar").setAttribute("size", "40px");
-function go_top() {
-    document.location="#github_link";
-}
-document.getElementById("top_btn").setAttribute("onclick", "go_top()");
+};
+input.value = "search";
+input.style.backgroundColor = "#60646c";
+var top_img = document.createElement('img');
+form.append(top_img);
+top_img.id = "top_btn";
+top_img.style.backgroundColor = "Transparent";
+top_img.src = "https://20170375.github.io/src/top.jpg";
+top_img.width = "30";
+top_img.height = "30";
+top_img.addEventListener('click', function() {
+    setTimeout( function up() {
+        if ( window.scrollY == window.screenTop ) return;
+        window.scrollTo(0, window.scrollY-50);
+        setTimeout(up, 1);
+    }, 1);
+});
 
 
 // ---- tabmenu setting ----

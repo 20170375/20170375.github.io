@@ -11,8 +11,9 @@ function load_md(json) {
             jQuery.get(data[i].href, function (data) {
                 var div = document.createElement('div')
                 md_list.append(div);
-                div.style.margin = "20px";
-                div.style.padding = "10px";
+                div.style.margin = "10px";
+                div.style.padding = "20px";
+                div.style.borderRadius = "10px";
                 div.style.backgroundColor = "#282d34";
                 div.innerHTML = marked(data);
                 var br = document.createElement('br');
