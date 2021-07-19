@@ -9,3 +9,4 @@
 + [w3schools.com](https://www.w3schools.com/)
 + [페이지 레이아웃](https://codingbroker.tistory.com/115)
 + [markdown to html](https://blog.naver.com/wizardry0629/222188894516)
++ [detour CORS](https://stackoverflow.com/questions/25081517/read-a-file-from-github)
