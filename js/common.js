@@ -112,7 +112,7 @@ button.onclick = "go_top()";
 button.style.backgroundColor = "Transparent";
 var img = document.createElement('img');
 button.append(img);
-img.src = "../src/top.jpg";
+img.src = "https://20170375.github.io/src/top.jpg";
 img.width = "30";
 img.height = "30";
 function search() {
@@ -129,7 +129,8 @@ document.getElementById("top_btn").setAttribute("onclick", "go_top()");
 
 // ---- tabmenu setting ----
 var tabmenu = document.querySelector(".tabmenu");
-jQuery.getJSON("../json/tabmenu.json", function (data) {
+var url = "https://20170375.github.io/json/tabmenu.json";
+jQuery.getJSON(url, function (data) {
     var resultHtml = "";
     var menu_html = document.querySelector("#template-menu").innerHTML;
     for(var i=0, len=data.length; i<len; i++) {

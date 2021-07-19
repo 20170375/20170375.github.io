@@ -1,6 +1,6 @@
 // ---- blockmenu setting ----
 var block_menu = document.querySelector(".blockmenu");
-jQuery.getJSON("../json/blockmenu.json", function (data) {
+jQuery.getJSON("https://20170375.github.io/json/blockmenu.json", function (data) {
   var resultHtml = "";
   var block_html = document.querySelector("#template-block").innerHTML;
   for(var i=0, len=data.length; i<len; i++) {

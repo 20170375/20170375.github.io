@@ -1,8 +1,8 @@
 [
-    {"href" : "./ros.html", "name" : "ROS"},
-    {"href" : "./embedded.html", "name" : "Embedded"},
-    {"href" : "./web.html", "name" : "Web"},
-    {"href" : "./app.html", "name" : "App"},
-    {"href" : "./unity.html", "name" : "Unity"},
-    {"href" : "./unreal.html", "name" : "Unreal"}
+    {"href" : "https://20170375.github.io/html/ros.html", "name" : "ROS"},
+    {"href" : "https://20170375.github.io/html/embedded.html", "name" : "Embedded"},
+    {"href" : "https://20170375.github.io/html/web.html", "name" : "Web"},
+    {"href" : "https://20170375.github.io/html/app.html", "name" : "App"},
+    {"href" : "https://20170375.github.io/html/unity.html", "name" : "Unity"},
+    {"href" : "https://20170375.github.io/html/unreal.html", "name" : "Unreal"}
 ]
