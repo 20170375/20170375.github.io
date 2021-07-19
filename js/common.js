@@ -79,7 +79,7 @@ nav.append(div);
 // ---- header tag setting ----
 var header = document.querySelector("header");
 var a = document.createElement('a');
-a.href = "https://20170375.github.io/html/index.html";
+a.href = "https://20170375.github.io/";
 var strong = document.createElement('strong');
 strong.innerText = "Github";
 a.append(strong);
